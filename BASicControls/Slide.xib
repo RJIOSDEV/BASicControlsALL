@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="n48-1E-mBL" customClass="Slide" customModule="BASicControls" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-jA-DQQ" userLabel="Description">
+                    <rect key="frame" x="41.5" y="502.5" width="331" height="359.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Use this technique to make your slides, create your app, in a simple and effective way ">
+                            <attributes>
+                                <color key="NSColor" red="0.44313999999999998" green="0.44313999999999998" blue="0.44313999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" metaFont="system" size="15"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVs-Or-LEZ" userLabel="Title">
+                    <rect key="frame" x="0.0" y="459.5" width="414" height="43"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Winnie the Pooh">
+                            <attributes>
+                                <color key="NSColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" metaFont="system" size="18"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="pMf-sU-Pgg" userLabel="ImageView">
+                    <rect key="frame" x="0.0" y="99" width="414" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pMf-sU-Pgg" secondAttribute="height" multiplier="207:130" id="8Um-FS-M46"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Kq0-pD-Ez4"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g1D-jA-DQQ" firstAttribute="centerX" secondItem="Kq0-pD-Ez4" secondAttribute="centerX" id="462-mD-mhU"/>
+                <constraint firstItem="gVs-Or-LEZ" firstAttribute="top" secondItem="pMf-sU-Pgg" secondAttribute="bottom" multiplier="1.28" id="4hX-D0-rl0"/>
+                <constraint firstItem="g1D-jA-DQQ" firstAttribute="bottom" secondItem="Kq0-pD-Ez4" secondAttribute="bottom" id="J1G-as-Ikx"/>
+                <constraint firstItem="pMf-sU-Pgg" firstAttribute="centerX" secondItem="Kq0-pD-Ez4" secondAttribute="centerX" id="L5o-CT-UsI"/>
+                <constraint firstItem="pMf-sU-Pgg" firstAttribute="top" secondItem="Kq0-pD-Ez4" secondAttribute="top" constant="55" id="W4G-IQ-2FP"/>
+                <constraint firstItem="gVs-Or-LEZ" firstAttribute="bottom" secondItem="g1D-jA-DQQ" secondAttribute="top" id="Ycj-Aq-4Ad"/>
+                <constraint firstItem="g1D-jA-DQQ" firstAttribute="top" secondItem="pMf-sU-Pgg" secondAttribute="bottom" multiplier="1.4" id="ciO-lN-F2N"/>
+                <constraint firstItem="pMf-sU-Pgg" firstAttribute="width" secondItem="n48-1E-mBL" secondAttribute="width" id="hja-Zo-gAN"/>
+                <constraint firstItem="gVs-Or-LEZ" firstAttribute="leading" secondItem="n48-1E-mBL" secondAttribute="leading" id="mDy-rY-OI8"/>
+                <constraint firstItem="gVs-Or-LEZ" firstAttribute="centerX" secondItem="Kq0-pD-Ez4" secondAttribute="centerX" id="niV-3u-JeM"/>
+                <constraint firstItem="g1D-jA-DQQ" firstAttribute="width" secondItem="n48-1E-mBL" secondAttribute="width" multiplier="0.8" id="tqd-11-Sbs"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="pMf-sU-Pgg" id="lkn-lj-8w0"/>
+                <outlet property="labelDesc" destination="g1D-jA-DQQ" id="hD9-mz-aqR"/>
+                <outlet property="labelTitle" destination="gVs-Or-LEZ" id="UiY-zf-xvo"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_onboarding_1" width="194.5" height="170"/>
+    </resources>
+</document>
